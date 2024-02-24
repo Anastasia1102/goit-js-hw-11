@@ -13,10 +13,10 @@ export function createGalleryMarkup(images) {
         <img class="image" src="${image.webformatURL}" alt="${image.tags}" loading="lazy" />
       </a>
       <div class="info">
-       <p><i class="img-text">Likes </i><span class="span-text">${image.likes}</span></p>
-        <p><i class="img-text">Views </i><span class="span-text">${image.views}</span></p>
-        <p><i class="img-text">Comments </i><span class="span-text">${image.comments}</span></p>
-        <p><i class="img-text">Downloads </i><span class="span-text">${image.downloads}</span></p>
+       <div class="info-item"><p><i class="img-text">Likes </i><span class="span-text">${image.likes}</span></p></div>
+        <div class="info-item"><p><i class="img-text">Views </i><span class="span-text">${image.views}</span></p></div>
+        <div class="info-item"><p><i class="img-text">Comments </i><span class="span-text">${image.comments}</span></p></div>
+        <div class="info-item"><p><i class="img-text">Downloads </i><span class="span-text">${image.downloads}</span></p></div>
       </div>
     </div>
   `

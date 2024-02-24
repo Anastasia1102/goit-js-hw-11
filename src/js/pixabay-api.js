@@ -11,7 +11,14 @@ const API_KEY = '42334631-07f239856d3b6a49db441bfb9';
 
 export function fetchImages(query) {
     const loader = document.querySelector('.loader');
-    loader.style.display = 'block';
+    const loaderButton = document.querySelector('.input-btn');
+    function showLoader() {
+      loader.style.display = 'block';
+    }
+    loaderButton.addEventListener('click', function() {
+      // Показати індикатор завантаження
+        showLoader();
+    });
     fetch(`https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&orientation=horizontal&safesearch=true`)
         .then(response => {
             if (!response.ok) {

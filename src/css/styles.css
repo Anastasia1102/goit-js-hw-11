@@ -83,7 +83,7 @@ input {
 }
 
 .loader {
-  display: block;
+  display: none;
   position: relative;
   margin-top: 24px;
   height: 12px;
@@ -100,7 +100,7 @@ input {
   height: 100%;
   width: 0;
   background: #ff3d00;
-  animation: 6s prog ease-in infinite;
+  animation: 1s prog ease-in infinite;
 }
 
 @keyframes prog {
@@ -141,6 +141,13 @@ input {
   padding-left: 20px;
   padding-right: 20px;
   height: 48px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-text {
